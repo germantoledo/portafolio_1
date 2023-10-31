@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        a,
+        button {
+            text-decoration: none !important;
+        }
+
+        .bg-image {
+            background-image: url('https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            height: 70vh;
+            background-size: cover;
+        }
+
+        .fondo-bienvenida {
+            background-color: white;
+            opacity: 0.8;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+
+        .fondo-bienvenida:hover {
+            opacity: 1;
+            transition: all .3s ease;
+        }
+
+        .contacto{
+            transition: all .3s ease;
+        }
+
+        .contacto:hover{
+            color: black !important;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="index.html">
+                <h5 class="fw-bold">Portafolio</h5>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-md-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de mí</a>
+                </li>
+            </ul>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">Acerca de mí</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="btn btn-light px-3" target="_blank"
+                    href="https://www.linkedin.com/in/german-federico-toledo-coronado-655546194" role="button"><i
+                        class="bi bi-linkedin" style="color:blue"></i></a>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+    <div class="bg-image d-flex flex-column justify-content-center align-items-center ">
+        <div
+            class="d-flex flex-column justify-content-center align-items-center rounded p-4 fondo-bienvenida col-12 col-md-8">
+            <h1 class="fw-bold">German Toledo</h1>
+            <h3 class="text-center">Desarrollador Frontend y Mobile</h3>
+        </div>
+        <div class="d-flex justify-content-center rounded p-4 fondo-bienvenida mt-3 gap-4 col-12 col-md-8">
+            <img src="mysql.png" alt="mysql" class="img-fluid">
+            <img src="angular.png" alt="mysql" class="img-fluid">
+            <img src="flutter.png" alt="mysql" class="img-fluid">
+            <img src="php.png" alt="mysql" class="img-fluid">
+            <img src="oracle.png" alt="mysql" class="img-fluid">
+        </div>
+    </div>
+
+
+    <h2 class="text-center my-5 fw-bold">Mis trabajos</h2>
+    <div class="d-flex flex-column my-5">
+        <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center">
+            <div class="card col-12 col-md-4">
+                <img src="HM.png" class="card-img-top" alt="healthmanager">
+                <div class="card-body">
+                    <h5 class="card-title">HealthManager</h5>
+                    <p class="card-text">Sistema web de citas médicas desarrollado en PHP, Javascript, Jquery, MySQL</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://www.healthmanager.com.mx" target="_blank" class="btn btn-dark">Ver <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <img src="CFoianini.webp" style="width: 100px;" class="card-img-top img-fluid" alt="appFoianini">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">App Clinica Foianini</h5>
+                    <p class="card-text">Colaboración en creación de la aplicación desarrollado en Oracle APEX, Oracle
+                        SQL, MySQL, Jquery, Javascript, PL/SQL</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://play.google.com/store/apps/details?id=com.clinicafoianini&pli=1"
+                            target="_blank" class="btn btn-dark">Ver <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4">
+                <img src="HC.png" class="card-img-top" alt="healthcenter">
+                <div class="card-body">
+                    <h5 class="card-title">Mi HealthCenter</h5>
+                    <p class="card-text">Sistema web de reserva de consultorios para negocio coworking médico,
+                        desarrollado en Angular, MySQL, NestJS</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://beta.mihealthcenter.com/" target="_blank" class="btn btn-dark">Ver <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <img src="HMApp.webp" style="width: 100px;" class="card-img-top" alt="healthmanagerApp">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">HealthManager APP</h5>
+                    <p class="card-text">Aplicación Móvil para los doctores facilitandoles la administración de sus
+                        citas médicas, desarrollado en Flutter, Dart, MySQL</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://play.google.com/store/apps/details?id=mx.com.healthmanager" target="_blank"
+                            class="btn btn-dark">Ver <i class="bi bi-box-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white bg-primary">
+        <!-- Grid container -->
+        <div class="container d-flex justify-content-between align-items-center p-4">
+            <h6>Contactame</h6>
+            <div class="d-flex">
+                <a href="https://wa.me/59175359174" class="text-white contacto fs-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:gefetoledo@gmail.com" class="text-white contacto fs-2 ms-3"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+            © 2023 Copyright:
+            <a class="text-white" href="#">German Toledo</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
